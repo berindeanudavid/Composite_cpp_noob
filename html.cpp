@@ -20,7 +20,6 @@ class Text : public Html{
         std::string text;
         Text(){
             text="";
-            std::cout << "WARNING: Default Constructor called for Text.\n";
         }
         Text(std::string arg0){
             text=arg0;
@@ -30,12 +29,10 @@ class Text : public Html{
         }
 };
 
-class Paragraph : public Html{
+class Paragraph : public Text{
     public:
-        std::string text;
         Paragraph(){
             text="";
-            std::cout << "WARNING: Default Constructor called for Paragraph.\n";
         }
         Paragraph(std::string arg0){
             text=arg0;
